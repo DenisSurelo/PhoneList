@@ -6,13 +6,21 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.12.0",
     "@testing-library/jest-dom": "^5.16.3",
+<<<<<<< HEAD
     "@testing-library/react": "^16.3.2",
+=======
+    "@testing-library/react": "^12.1.4",
+>>>>>>> 2aef68c8408a0840f41225109f45eb867e21ba9a
     "@testing-library/user-event": "^13.5.0",
     "nanoid": "^6.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-redux": "^9.3.0",
+<<<<<<< HEAD
     "react-scripts": "^5.0.1",
+=======
+    "react-scripts": "5.0.1",
+>>>>>>> 2aef68c8408a0840f41225109f45eb867e21ba9a
     "redux-persist": "^6.0.0",
     "web-vitals": "^2.1.3"
   },
