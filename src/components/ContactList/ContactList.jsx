@@ -3,7 +3,7 @@ import ContactItem from '../ContactItem/ContactItem';
 import './ContactList.css';
 
 const ContactList = () => {
-  const contacts = useSelector(state => state.contacts);
+  const contacts = useSelector(state => state.contacts.items) || [];
   const filter = useSelector(state => state.filter);
 
   const filteredContacts = contacts.filter(contact =>
@@ -12,8 +12,8 @@ const ContactList = () => {
 
   return (
     <ul className="contact-list">
-      {filteredContacts.map(({ id, name, number }) => (
-        <ContactItem key={id} id={id} name={name} number={number} />
+      {filteredContacts.map(({ id, name, phone }) => (
+        <ContactItem key={id} id={id} name={name} number={phone} />
       ))}
     </ul>
   );
